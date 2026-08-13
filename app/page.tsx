@@ -7,8 +7,8 @@ const caseStudies = [
     summary:
       "Own end-to-end product design across a growing platform — user flows, high-fidelity UI, and the design system and handoff docs the dev team builds from.",
     tags: ["Design Systems", "Developer Handoff", "Mentorship"],
-    // TODO: replace with your live Figma "Present" link
-    figmaUrl: "https://figma.com/your-clacachi-project-link",
+    figmaUrl:
+      "https://www.figma.com/proto/7xAVrbxNlggW1mNOoI882Y/Nike-Sneaker-Store-App?node-id=43-9608&t=9Z9zZHNEWtVOtDxU-1",
   },
   {
     num: "02",
@@ -18,7 +18,8 @@ const caseStudies = [
     summary:
       "Designed and refined UI for a cross-platform Flutter app, running usability testing to iron out inconsistencies between iOS and Android.",
     tags: ["Mobile UI", "Usability Testing", "iOS & Android"],
-    figmaUrl: "https://figma.com/your-stridrsoft-project-link",
+    figmaUrl:
+      "https://www.figma.com/proto/T186MleKekrGWMKXXH7ZJd/FAITH?node-id=103-2547&page-id=0%3A1&starting-point-node-id=103%3A423&t=JBy7iwlhFGFiVkvo-1",
   },
   {
     num: "03",
@@ -28,7 +29,8 @@ const caseStudies = [
     summary:
       "Turned user feedback and product data into a prioritized redesign backlog, and built dashboards that made UX and quality metrics visible to stakeholders.",
     tags: ["UX Research", "Dashboards", "Data-Informed Design"],
-    figmaUrl: "https://figma.com/your-aioniasoft-project-link",
+    figmaUrl:
+      "https://www.figma.com/proto/dsRdFDSTSonts7sPB7qRtj/Gamified-Self-Regulation-App--Tobi?node-id=0-1&t=8MBbPSOWIkn6rh1x-1",
   },
   {
     num: "04",
@@ -89,7 +91,7 @@ export default function Home() {
           <div className="hero-actions">
             <a
               className="btn btn-primary"
-              href="https://figma.com/your-portfolio-figma-link"
+              href="https://www.figma.com/proto/7xAVrbxNlggW1mNOoI882Y/Nike-Sneaker-Store-App?node-id=43-9608&t=9Z9zZHNEWtVOtDxU-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -246,7 +248,7 @@ export default function Home() {
               </a>
               <a
                 className="btn btn-ghost"
-                href="https://figma.com/your-portfolio-figma-link"
+                href="https://www.figma.com/proto/7xAVrbxNlggW1mNOoI882Y/Nike-Sneaker-Store-App?node-id=43-9608&t=9Z9zZHNEWtVOtDxU-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
