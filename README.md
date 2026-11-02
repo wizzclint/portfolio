@@ -4,12 +4,11 @@ A dark-mode, "design-tool chrome" styled portfolio built with Next.js (App Route
 
 ## Before you deploy — edit these
 
-1. **`app/page.tsx`** — each item in `caseStudies` has a `figmaUrl` placeholder like
-   `https://figma.com/your-clacachi-project-link`. Replace each with the real
-   "Present" link from your Figma project (see the share-link steps I gave you).
-2. Also swap the hero and footer `figma.com/your-portfolio-figma-link` links to your
-   main Figma profile or best project.
-3. Optional: update the "Available for fintech projects" line in the top chrome bar
+1. **`app/page.tsx`** — project walkthroughs are available by request. All demo
+   buttons open a prefilled email to `wizzclint@gmail.com`; project buttons include
+   the selected organization in the subject and message. Update `demoRequestUrl`
+   if the demo contact address changes. Keep prototype URLs out of public page data.
+2. Optional: update the "Available for fintech projects" line in the top chrome bar
    if your availability changes.
 
 ## Run it locally

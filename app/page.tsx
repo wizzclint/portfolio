@@ -7,8 +7,6 @@ const caseStudies = [
     summary:
       "Own end-to-end product design across a growing platform — user flows, high-fidelity UI, and the design system and handoff docs the dev team builds from.",
     tags: ["Design Systems", "Developer Handoff", "Mentorship"],
-    figmaUrl:
-      "https://www.figma.com/proto/7xAVrbxNlggW1mNOoI882Y/Nike-Sneaker-Store-App?node-id=43-9608&t=9Z9zZHNEWtVOtDxU-1",
   },
   {
     num: "02",
@@ -18,8 +16,6 @@ const caseStudies = [
     summary:
       "Designed and refined UI for a cross-platform Flutter app, running usability testing to iron out inconsistencies between iOS and Android.",
     tags: ["Mobile UI", "Usability Testing", "iOS & Android"],
-    figmaUrl:
-      "https://www.figma.com/proto/T186MleKekrGWMKXXH7ZJd/FAITH?node-id=103-2547&page-id=0%3A1&starting-point-node-id=103%3A423&t=JBy7iwlhFGFiVkvo-1",
   },
   {
     num: "03",
@@ -29,8 +25,6 @@ const caseStudies = [
     summary:
       "Turned user feedback and product data into a prioritized redesign backlog, and built dashboards that made UX and quality metrics visible to stakeholders.",
     tags: ["UX Research", "Dashboards", "Data-Informed Design"],
-    figmaUrl:
-      "https://www.figma.com/proto/dsRdFDSTSonts7sPB7qRtj/Gamified-Self-Regulation-App--Tobi?node-id=0-1&t=8MBbPSOWIkn6rh1x-1",
   },
   {
     num: "04",
@@ -40,7 +34,6 @@ const caseStudies = [
     summary:
       "Designed intuitive, accessible interfaces for web applications end to end — research, wireframes, visual design, and dev-ready specs.",
     tags: ["Web UI", "User Research", "Prototyping"],
-    figmaUrl: "https://figma.com/your-surgetechnology-project-link",
   },
   {
     num: "05",
@@ -50,9 +43,15 @@ const caseStudies = [
     summary:
       "Established the UI patterns and design standards used across multiple web builds, shortening the path from design to shipped product.",
     tags: ["Web Design", "UI Patterns", "Front-end Collaboration"],
-    figmaUrl: "https://figma.com/your-soutechventures-project-link",
   },
 ];
+
+function demoRequestUrl(project?: string) {
+  const subject = project ? `Demo request: ${project}` : "Portfolio demo request";
+  const body = `Hi Clinton,\n\nI'd like to request a demo of ${project ? `your work with ${project}` : "your selected projects"}.\n\nName:\nCompany:\nPreferred date and time (with timezone):\n\nThank you!`;
+
+  return `mailto:wizzclint@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
 
 export default function Home() {
   return (
@@ -91,11 +90,9 @@ export default function Home() {
           <div className="hero-actions">
             <a
               className="btn btn-primary"
-              href="https://www.figma.com/proto/7xAVrbxNlggW1mNOoI882Y/Nike-Sneaker-Store-App?node-id=43-9608&t=9Z9zZHNEWtVOtDxU-1"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={demoRequestUrl()}
             >
-              View Figma work ↗
+              Request a demo ↗
             </a>
             <a className="btn btn-ghost" href="mailto:wizzclint@gmail.com">
               Email me
@@ -162,7 +159,8 @@ export default function Home() {
           </div>
           <p className="section-intro">
             Five roles, one thread: taking a product from a rough idea to an interface people
-            can actually use — and that a dev team can actually build.
+            can actually use — and that a dev team can actually build. Project walkthroughs
+            are available by request. Request a demo to see the designs and prototypes.
           </p>
           <div className="case-list">
             {caseStudies.map((c) => (
@@ -185,11 +183,10 @@ export default function Home() {
                 </div>
                 <a
                   className="case-link"
-                  href={c.figmaUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={demoRequestUrl(c.org)}
+                  aria-label={`Request a demo of ${c.org}`}
                 >
-                  View in Figma ↗
+                  Request a demo ↗
                 </a>
               </div>
             ))}
@@ -248,11 +245,9 @@ export default function Home() {
               </a>
               <a
                 className="btn btn-ghost"
-                href="https://www.figma.com/proto/7xAVrbxNlggW1mNOoI882Y/Nike-Sneaker-Store-App?node-id=43-9608&t=9Z9zZHNEWtVOtDxU-1"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={demoRequestUrl()}
               >
-                Figma ↗
+                Request a demo ↗
               </a>
             </div>
             <div className="contact-links">
